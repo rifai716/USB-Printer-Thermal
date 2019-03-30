@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".Main">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:layout_marginBottom="20dp">
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listViewExolore"
+                ></ListView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4">
+
+            <Button
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_width="1dp"
+                android:text="CARI"
+                android:id="@+id/buttonSearchDevices"
+                android:onClick="OnClickButtonSearchDevices" />
+            <Button
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="CONNECT"
+                android:id="@+id/buttonConnect"
+                android:onClick="OnClickButtonConnectDevices" />
+            <Button
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="Sample"
+                android:id="@+id/buttonSample"
+                android:onClick="OnClickButtonSample" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4">
+
+            <Button
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="Sample 1"
+                android:id="@+id/buttonSample1"
+                android:onClick="OnClickButtonSample1" />
+            <Button
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="New Button"
+                android:id="@+id/button5" />
+            <Button
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="New Button"
+                android:id="@+id/button6" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
